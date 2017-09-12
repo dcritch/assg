@@ -1,0 +1,13 @@
+{% extends "skeleton.html" %}
+{% block title %}
+{{ site_title }}/blog/{{ item.title }}
+{% endblock %}
+{% block location %}
+{{ item.title }}
+{% endblock %}
+{% block content %}
+<b>{{ item.date }} |  {{ item.title }} </b>
+<p>
+ {{ item.body | replace('\n', '<br><br>')}}
+{% endblock %}
+

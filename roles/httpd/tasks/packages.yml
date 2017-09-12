@@ -1,0 +1,6 @@
+---
+- name: install httpd
+  package:
+    name: httpd
+    state: latest
+  notify: starnable httpd

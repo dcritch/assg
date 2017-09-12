@@ -1,0 +1,21 @@
+---
+- name: clear out target directory
+  file:
+   state: absent
+   path: "{{ document_root }}/"
+  when:
+  - "{{ purge|default('false') }} == true"
+
+- name: ensure target directory exists
+  file:
+   state: directory
+   path: "{{ document_root }}"
+   mode: 0755
+- name: copy html files
+  copy:
+    src: std.css
+    dest: "{{ document_root }}/std.css"
+- name: create index.html
+  template:
+    src: index.html.j2
+    dest: "{{ document_root }}/index.html"

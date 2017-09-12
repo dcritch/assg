@@ -1,0 +1,16 @@
+---
+- name: check if firewalld is running
+  command: systemctl is-active firewalld
+  register: fw_check
+  failed_when:
+  - fw_check.rc != 0
+  - fw_check.rc != 3
+
+- name: open firewall
+  firewalld:
+    state: enabled
+    service: http
+    permanent: true
+    immediate: true
+  when:
+  - fw_check.stdout == 'active'

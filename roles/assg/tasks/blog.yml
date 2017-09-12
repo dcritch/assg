@@ -1,0 +1,22 @@
+---
+- name: ensure blog dir is present
+  file:
+    state: directory
+    path: "{{ document_root }}/blog"
+    mode: 0755
+
+- name: generate blog index
+  template:
+    src: posts.html.j2
+    dest: "{{ document_root }}/blog/index.html"
+  tags:
+  - posts
+
+- name: generate posts
+  template:
+    src: post.html.j2
+    dest: "{{ document_root }}/blog/{{ item.date | replace(' ', '_') }}-{{ item.title | replace(' ', '_') }}.html"
+  with_items:
+  - "{{ blog_posts }}"
+  tags:
+  - posts

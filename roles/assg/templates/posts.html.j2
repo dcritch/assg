@@ -1,0 +1,14 @@
+{% extends "skeleton.html" %}
+{% block title %}
+{{ site_title }}/blog/
+{% endblock %}
+{% block location %}
+{% endblock %}
+{% block content %}
+<b>blog posts:</b>
+{% for post in blog_posts %}
+<p>
+<b>{{ post.date }}</b> <a href="{{ post.date | replace(' ', '_') }}-{{ post.title | replace(' ', '_') }}.html">{{ post.title }}</a>
+</p>
+{% endfor %}
+{% endblock %}

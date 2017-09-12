@@ -1,0 +1,4 @@
+---
+# tasks file for assg
+- include: deploy.yml
+- include: blog.yml

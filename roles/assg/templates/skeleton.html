@@ -1,0 +1,49 @@
+<html>
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="/std.css" />
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+
+<div class=header>
+    <div class=left>
+        <b><a href="{{ site_url }}">{{ site_title }}</a> | <a href="/blog/">blog://</a></b>{% block location %}{% endblock %}
+    </div>
+    <div class=right>
+    {% for link in top_links %}
+        <a href="{{ link.target }}">{{ link.name }}</a>
+        {% if loop.last %}
+        {% else %}
+            |
+        {% endif %}
+    {% endfor %}
+    </div>
+</div>
+
+<!- begin content ->
+<div class="content">
+    {% block content %}
+    {% endblock %}
+</div>
+<!- end content ->
+
+<div class=footer>
+    {% block footer %}
+    <div class=left>
+        bleep bloop blorp !@#()* !()#*
+    </div>
+    <div class=right>
+    {% for link in bottom_links %}
+        <a href="{{ link.target }}">{{ link.name }}</a>
+        {% if loop.last %}
+        {% else %}
+            |
+        {% endif %}
+    {% endfor %}
+    </div>
+    {% endblock %}
+</div>
+</body>
+</html>

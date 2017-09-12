@@ -1,0 +1,8 @@
+---
+# tasks file for httpd
+- include: packages.yml
+  tags:
+  - apache
+- include: firewall.yml
+  tags:
+  - apache

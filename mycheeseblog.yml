@@ -1,0 +1,42 @@
+---
+# vars file for mycheeseblog.com
+site_title: mycheeseblog.com
+site_url: http://mycheeseblog.com
+bottom_links:
+  -
+    name: linkedin
+    target: http://linkedin.com/me
+  -
+    name: twitter
+    target: https://twitter.com/me
+  -
+    name: github
+    target: https://github.com/me
+
+top_links:
+  -
+    name: mycoolthing
+    target: http://coolthing.org
+  -
+    name: myotherthing
+    target: http://thingsrule.net
+
+
+blog_posts:
+  -
+    title: 'eating cheese'
+    date: '2017-08-24'
+    body: |
+      Cheese fest coming up! Can't wait to eat all that cheese.
+      Stay tuned for updates!
+  - 
+    title: 'lactose intolerance'
+    date: '2017-08-26'
+    body: |
+      Turns out I'm lactose intolerant. Not feeling so hot.
+      Current mood: :(
+
+about:
+  body: |
+    I love cheese!
+    This is my blog about eating a lot of cheese.

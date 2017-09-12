@@ -1,0 +1,7 @@
+---
+# handlers file for httpd
+- name: starnable httpd
+  service:
+    name: httpd
+    state: restarted
+    enabled: true

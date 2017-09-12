@@ -1,0 +1,7 @@
+---
+# handlers file for assg
+- name: restart httpd
+  service:
+    name: httpd
+    state: restarted
+    enabled: true

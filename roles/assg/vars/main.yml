@@ -1,0 +1,51 @@
+---
+# vars file for assg
+document_root: /var/www/html
+site_title: my site
+site_url: http://www.my.blog
+blog_posts:
+  -
+    title: 'first post'
+    date: '1979-01-01'
+    body: |
+      First post!
+      Static sites are the best.
+  -
+    title: 'another post'
+    date: '2017-09-12'
+    body: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et magna lorem. Ut et purus eu odio mollis tincidunt. Morbi et vehicula augue. Mauris id faucibus eros. Nulla vel urna ut nunc fermentum rhoncus a id risus. In dictum ultrices ultricies. Vestibulum eu libero leo. Curabitur leo turpis, ultrices vehicula nisl sit amet, commodo finibus enim. Cras posuere, lorem a vulputate tincidunt, ante lectus faucibus enim, eget blandit dui leo at ipsum. Morbi est justo, cursus et eleifend ac, consectetur sit amet arcu. Cras commodo a ex ut dictum.
+      Suspendisse potenti. Duis imperdiet dictum odio id iaculis. Vivamus ac diam sit amet nisi porttitor molestie id finibus dui. Proin quis sodales turpis. Donec consequat varius auctor. Sed est sapien, eleifend eget commodo nec, ullamcorper eu augue. Aliquam a tortor quis risus laoreet efficitur. Mauris ac dui orci.
+      Aliquam maximus, eros sed dapibus faucibus, eros felis egestas ligula, non pulvinar nibh arcu eget sem. Nunc malesuada mi sem, non convallis turpis accumsan vitae. Sed congue quis mi at consectetur. Nam pellentesque arcu bibendum lectus volutpat maximus. Nam tortor magna, pharetra eget tellus sit amet, suscipit gravida sem. Phasellus massa diam, commodo non erat nec, faucibus porta sapien. Integer fringilla efficitur vehicula.
+      Cras auctor hendrerit aliquet. Mauris laoreet magna sit amet ipsum placerat porttitor. Duis erat erat, porttitor id consequat ut, dignissim vel libero. Fusce dapibus dapibus turpis, nec pretium purus pharetra at. Sed mattis eget sem sit amet tristique. Sed sed mi lacus. Ut quis faucibus nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas non consectetur dolor, ut pellentesque nibh. Vivamus nulla magna, semper at ex fringilla, vulputate facilisis quam. Aenean iaculis id lectus sed convallis. Nulla tristique, massa sed malesuada euismod, lorem sem egestas urna, id egestas risus sapien vel dolor. Duis congue congue laoreet.
+      Nulla facilisi. Integer ut risus pellentesque, molestie purus a, viverra neque. Duis dictum, quam at posuere scelerisque, dui nulla semper nulla, a ultrices est felis ut leo. Integer venenatis bibendum risus, sit amet molestie neque molestie non. In ultricies arcu vitae lacus condimentum sodales in sit amet lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris convallis neque sapien, sit amet fermentum lectus interdum ac. Maecenas at congue ligula. Sed est sem, feugiat id aliquam in, elementum eget urna. Donec lacinia porttitor quam, eget placerat lectus bibendum ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ligula enim, ultrices sollicitudin ligula eget, consequat dictum mauris. Donec placerat nulla sapien. 
+  - 
+    title: 'last post'
+    date: '2049-12-31'
+    body: |
+      Goodbye cruel world.
+about:
+  body: |
+    My name is mud.
+    I'm in to this and that.
+    I like cheese.
+
+bottom_links:
+  -
+    name: linkedin
+    target: http://linkedin.com/itsme
+  -
+    name: twitter
+    target: https://twitter.com/itsme
+  -
+    name: github
+    target: https://github.com/itsme
+
+top_links:
+  -
+    name: projectA
+    target: http://github.com
+  -
+    name: projectB
+    target: http://github.com
+

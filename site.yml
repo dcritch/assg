@@ -1,0 +1,7 @@
+---
+- hosts: webhost
+  remote_user: davidc
+  become: true
+  roles:
+  - roles/httpd
+  - roles/assg

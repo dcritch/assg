@@ -22,9 +22,9 @@ Then run the playbook:
 $ ansible-playbook -i hosts site.yml
 ~~~
 
-This will generate a site with the examples specific in `roles/assg/vars/main.yaml`.
+This will generate a site with the examples specified in `roles/assg/vars/main.yaml`.
 
-You might want to store site specific information along with blog posts in a separate YAML file. This way, you can manage multiple different sites using the same playbook, but with different content.
+You might want to store site specific information along with blog posts in a separate YAML file. This way, you can manage multiple sites using the same playbook, but with different content.
 
 Assuming your site's configuration is stored as so:
 ~~~
@@ -84,7 +84,7 @@ There is also a 'hidden' option to purge the contents of the target director fir
 $ ansible-playbook -i hosts site.yml -e @mycheeseblog.yml -e purge=true
 ~~~
 
-To add a new blog post, update the `blog_posts` parameter and re-run the playbook. Though it is idempotent and there is no harm in running the full thing each time, you can generate just new posts by using the `posts` tag:
+To add a new blog post, update the `blog_posts` parameter and re-run the playbook. Though it is idempotent and there is no harm in running the full thing each time, you can generate just new posts and save some time by using the `posts` tag:
 ~~~
 $ ansible-playbook -i hosts site.yml -e @mycheeseblog.yml --tags posts
 ~~~
